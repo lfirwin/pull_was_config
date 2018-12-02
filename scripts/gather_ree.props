@@ -1,0 +1,40 @@
+#----------------------------------------------------------------------------
+# This file holds the properties used by gather_ree.sh and gather_ree_ssh.sh
+# scripts.  Any variable that is changeable should be put into this file.
+#----------------------------------------------------------------------------
+# Adhoc variables used by the script
+# ==================================
+# Temp folder
+tmp="/tmp"
+
+# Name of index files 
+tmp_index=${tmp}/html/config-index.html
+xml_index=config-index-xml.html
+index=config-index.html
+
+# Web site home directory
+home=/service/config-data/wpp-ree
+
+# Directory of scripts on WAS DMGR
+local_scripts="/apps/scripts/ree"
+
+# Log file variables
+log=${tmp}/gather_ree.log
+log_html=${home}/log.html
+
+# Environments array
+#   Each element of the array is comprised of these parts separated by a "|"
+#      environment name - used for naming the associated html file
+#      title - title to use in the html file
+#      host - fqdn of the host
+#      port - the ssl port for the WAS console
+#      bin - location of the bin directory from which to run the wsadmin.sh command
+#
+# These entries are grouped by host so that they show up on the home page grouped accordingly.
+# When adding an entry, add it under the last entry of the host.  If this is a new host, simply
+# add to the end of the array.
+#
+# NOTE: You only need to add the DMGR unless the environment uses WAS Base (where there is no DMGR).
+#-------------------------------------------------------------------------------------------------------
+envs[0]="dev-config|Development|dev.hostname.com|9043|/opt/IBM/WebSphere/AppServer/profiles/dmgr/bin"
+envs[1]="prod-config|Production|prod.hostname.com|9043|/opt/IBM/WebSphere/AppServer/profiles/dmgr/bin"

@@ -1,0 +1,70 @@
+body {font-family:"Verdana";}
+h4 {text-align:center;text-decoration:underline;}
+a {text-decoration:none;}
+div.nav {font-size:0.8em;}
+#jvms ul
+{
+margin: 0;
+list-style-type: none;
+font-size:0.95em;
+}
+
+ul.nav {list-style-type: none;}
+table.deploy
+{
+table-layout:auto;
+}
+table
+{
+width:100%;
+border-collapse:collapse;
+font-size:0.8em;
+table-layout:fixed;
+}
+th {padding:5px;background-color:#e0e0e0;text-align:left}
+th.name {padding:5px;background-color:#e0e0e0;text-align:left;border-top: 1px solid black;}
+th.scope {padding:5px;background-color:#c0c0c0;text-align:center;border-bottom: 1px solid black;}
+td {
+border: 1px solid black;
+padding:5px;
+border-left:none;
+border-right:none;
+border-bottom:none;
+word-wrap:break-word;
+}
+td.pad {
+border:none;
+padding:5px;
+}
+
+td.properties {background-color:#f0f0f0;}
+td.left {width:25%;background-color:#f0f0f0;border-right: 1px solid black;}
+td.right {background-color:#fbfbfb;}
+.center {text-align:center;}
+.update {float:right;text-align:right;font-size:0.7em;}
+.top {float:right;text-align:right;}
+.home {font-size:1.25em;}
+
+#navcontainer ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+
+#navcontainer ul li { display: inline; }
+
+#navcontainer ul li a
+{
+text-decoration: none;
+padding: .2em 1em;
+color: #fff;
+background-color: #036;
+}
+
+#navcontainer ul li a:hover
+{
+color: #fff;
+background-color: #369;
+}
