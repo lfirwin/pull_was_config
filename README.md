@@ -19,3 +19,7 @@ Deployment manager processes running on the same VM will be executed in the orde
 
 This reduces the amount of time to gather this data across many environments.  
 
+Output files will not be automatically updated in the home directory, unless there is a material change in the configuration.  The timestamp on the environment configuration web page indicates the last time the file was updated, and can provide a guesstimate as to when an actual change was made to the WAS configuration.  If cron is used to schedule the runs on a fairly frequent basis, this narrows the timeframe even more.
+
+## HTML vs. XML
+The wsadmin Jython script outputs both XML and HTML.  An included XSL file can be used to view XML files in a web browser.  (Yes, why both - it's a long story.)
